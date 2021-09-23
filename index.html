@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Cotizador CruzBlanca</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="images/logocb.png" alt="Logo CruzBlanca">
+    </header>
+    <section class="main">
+        <div class="main__title">
+            <h1>Cotizador CruzBlanca</h1>
+        </div>
+    </section>
+    <section class="data">
+        <div class="data__container">
+        <form class="data__container--form">
+            <img class="data__img" src="images/users.png" alt="Icono de usuarios">
+            <select class="data__combo" name="genero" id="genero">
+                <option value="default">Seleccione por favor</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+            <input class="data__container--form-input" type="text" placeholder="Edad">
+            <select class="data__combo" name="plan" id="plan">
+                <option value="default">Seleccione por favor</option>
+                <option value="practico">Práctico Mixto</option>
+                <option value="optimo">Óptimo Mixto</option>
+                <option value="exclusivo">Exclusivo Mixto</option>
+            </select>
+            <button class="button">Calcular Tarifa</button>
+            <button class="button">Limpiar e ingresar</button>
+        </form>
+    </div>
+    </section>
+</body>
+</html>
