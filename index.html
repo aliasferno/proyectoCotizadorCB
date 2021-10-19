@@ -25,17 +25,21 @@
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
             </select>
-            <input class="data__container--form-input" type="text" placeholder="Edad">
+            <input id="InputEdad" class="data__container--form-input" type="text" placeholder="Edad">
             <select class="data__combo" name="plan" id="plan">
                 <option value="default">Seleccione por favor</option>
                 <option value="practico">Práctico Mixto</option>
                 <option value="optimo">Óptimo Mixto</option>
                 <option value="exclusivo">Exclusivo Mixto</option>
             </select>
-            <button class="button" onclick="window.open('./resumen.html', '_top'); return false;">Calcular Tarifa</button>
+            <button type="button" class="button" onclick="onClickButtonCalcularTarifa()">Calcular Tarifa</button>
             <button class="button">Limpiar e ingresar</button>
+            <p id="valueEdad"></p>
+            <p id="valueGenero"></p>
+            <p id="valuePlan"></p>
         </form>
     </div>
     </section>
+    <script src="./practico.js"></script>
 </body>
 </html>
